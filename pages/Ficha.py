@@ -180,5 +180,5 @@ if st.button('Buscar Cadastro'):
         b64 = b64.decode()
 
         # Crie um link de download para o PDF
-        href = f'<a href="data:application/octet-stream;base64,{b64}" download="meu_arquivo.pdf">{resultado.head().iat[0, 0]}</a>'
+        href = f'<a href="data:application/octet-stream;base64,{b64}" download="ficha_paciente.pdf">{resultado.head().iat[0, 0]}</a>'
         st.markdown(href, unsafe_allow_html=True)
