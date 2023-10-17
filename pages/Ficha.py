@@ -166,7 +166,7 @@ if st.button('Buscar Cadastro'):
 
         pdf.cell(10,4,txt='(   ) Glicose - 50%',ln=True, align='L')
 
-        pdf.cell(10,70,txt=',ln=True, align='L')
+        pdf.cell(10,70,txt='',ln=True, align='L')
         pdf.cell(10,4,txt='Saída da unidade: ____/____/_______  ás _____:_____h.',ln=True, align='L')
         pdf.cell(10,4,txt='(   ) Alta médica (   ) Evasão (   ) Óbito',ln=True, align='L')
         pdf.cell(10,4,txt='_________________________________________________________________________',ln=True, align='L')
