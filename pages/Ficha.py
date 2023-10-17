@@ -136,39 +136,43 @@ if st.button('Buscar Cadastro'):
         pdf.cell(190, 4, txt='', border=True, ln=True)
         pdf.cell(190, 4, txt='', border=True, ln=True)
         pdf.cell(190, 4, txt='', border=True, ln=True)
-        pdf.cell(190, 12, txt='', ln=True)
+        pdf.cell(190, 30, txt='', ln=True)
         pdf.set_font("Arial", size=12)
-        pdf.cell(10,4,txt='(   ) Equipo',align='L')
-        pdf.cell(130,4,txt='(   ) Agulha - 13x45',align='C')
-        pdf.cell(14,4,txt='(   ) Seringa 1ML',ln=True, align='R')
+        pdf.cell(10,6,txt='(   ) Equipo',align='L')
+        pdf.cell(130,6,txt='(   ) Agulha - 13x45',align='C')
+        pdf.cell(14,6,txt='(   ) Seringa 1ML',ln=True, align='R')
 
-        pdf.cell(10,4,txt='(   ) Poliflix',align='L')
-        pdf.cell(134,4,txt='(   ) Agulha - 20x0,55',align='C')
-        pdf.cell(10,4,txt='(   ) Seringa 3ML',ln=True, align='R')
+        pdf.cell(10,6,txt='(   ) Poliflix',align='L')
+        pdf.cell(134,6,txt='(   ) Agulha - 20x0,55',align='C')
+        pdf.cell(10,6,txt='(   ) Seringa 3ML',ln=True, align='R')
 
-        pdf.cell(10,4,txt='(   ) Jelco nº______',align='L')
-        pdf.cell(128,4,txt='(   ) Agulha - 25x7',align='C')
-        pdf.cell(16,4,txt='(   ) Seringa 5ML',ln=True, align='R')
+        pdf.cell(10,6,txt='(   ) Jelco nº______',align='L')
+        pdf.cell(128,6,txt='(   ) Agulha - 25x7',align='C')
+        pdf.cell(16,6,txt='(   ) Seringa 5ML',ln=True, align='R')
 
-        pdf.cell(10,4,txt='(   ) Scalp nº______',align='L')
-        pdf.cell(128,4,txt='(   ) Agulha - 25x8',align='C')
-        pdf.cell(18,4,txt='(   ) Seringa 10ML',ln=True, align='R')
+        pdf.cell(10,6,txt='(   ) Scalp nº______',align='L')
+        pdf.cell(128,6,txt='(   ) Agulha - 25x8',align='C')
+        pdf.cell(18,6,txt='(   ) Seringa 10ML',ln=True, align='R')
 
-        pdf.cell(10,4,txt='(   ) Água destilada',align='L')
-        pdf.cell(128,4,txt='(   ) Agulha - 30x7', align='C')
-        pdf.cell(18,4,txt='(   ) Seringa 20ML',ln=True, align='R')
+        pdf.cell(10,6,txt='(   ) Água destilada',align='L')
+        pdf.cell(128,6,txt='(   ) Agulha - 30x7', align='C')
+        pdf.cell(18,6,txt='(   ) Seringa 20ML',ln=True, align='R')
 
-        pdf.cell(10,4,txt='(   ) Cloreto 0,09 - 10 ml', align='L')
-        pdf.cell(128,4,txt='(   ) Agulha - 30x8',ln=True, align='C')
+        pdf.cell(10,6,txt='(   ) Cloreto 0,09 - 10 ml', align='L')
+        pdf.cell(128,6,txt='(   ) Agulha - 30x8',ln=True, align='C')
 
-        pdf.cell(10,4,txt='(   ) Glicose - 25%', align='L')
-        pdf.cell(130,4,txt='(   ) Agulha - 40x12',ln=True, align='C')
+        pdf.cell(10,6,txt='(   ) Glicose - 25%', align='L')
+        pdf.cell(130,6,txt='(   ) Agulha - 40x12',ln=True, align='C')
 
-        pdf.cell(10,4,txt='(   ) Glicose - 50%',ln=True, align='L')
+        pdf.cell(10,6,txt='(   ) Glicose - 50%',ln=True, align='L')
+        pdf.cell(10, 80, txt='', ln=True, align='L')
+        pdf.cell(10, 5, txt='Saída da Unidade: _____/_____/_______  ás _____:_____h', ln=True, align='L')
+        pdf.cell(10, 5, txt='(   ) Alta Médica  (   ) Evasão  (   ) Óbito', ln=True, align='L')
+        pdf.cell(10, 5, txt='_____________________________________________________________________', ln=True, align='L')
+        pdf.cell(190, 4, txt='Telefone: (12) 3972-6620 - E-mail: saude@santabra.sp.gov.br', ln=True, align='C')
 
         # Salve o PDF em uma variável
         pdf_output = pdf.output(dest='S').encode('latin1')
-        
 
         # Codifique o PDF para base64
         b64 = base64.b64encode(pdf_output)
