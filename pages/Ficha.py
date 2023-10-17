@@ -166,10 +166,14 @@ if st.button('Buscar Cadastro'):
 
         pdf.cell(10,4,txt='(   ) Glicose - 50%',ln=True, align='L')
 
-
-
+        pdf.cell(10,70,txt=',ln=True, align='L')
+        pdf.cell(10,4,txt='Saída da unidade: ____/____/_______  ás _____:_____h.',ln=True, align='L')
+        pdf.cell(10,4,txt='(   ) Alta médica (   ) Evasão (   ) Óbito',ln=True, align='L')
+        pdf.cell(10,4,txt='_________________________________________________________________________',ln=True, align='L')
+        pdf.cell(10,4,txt='Telefone: (12) 3972-6620 - E-mail: saude@santabra.sp.gov.br',ln=True, align='L')
         # Salve o PDF em uma variável
         pdf_output = pdf.output(dest='S').encode('latin1')
+        
 
         # Codifique o PDF para base64
         b64 = base64.b64encode(pdf_output)
