@@ -1,8 +1,8 @@
 import streamlit as st
 
 st.markdown(f'''
-    # SISTEMA DE GESTÃO DE CADASTROS
-    ## Sistema completo para sua empresa
+    # Ficha para atendimento
+    ## Pronto Atendimento
     
-    Sistema criado em 2023 e estruturado para receber, editar e gerenciar cadastros
+    Prefeitura Municipal de Santa Branca
 ''')
