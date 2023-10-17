@@ -23,6 +23,6 @@ footer{
     visibility: hidden;
 }
 
-#assinatura-do-paci-nte{
-    text-align: center;
+#stActionButtonIcon{
+    visibility: hidden;
 }
