@@ -10,6 +10,6 @@ footer{
 #stToolbar{
     visibility: hidden;
 }
-stToolbarActions {
+#stToolbarActions {
     visibility: hidden;
 }
