@@ -73,7 +73,7 @@ if st.button('Buscar Cadastro'):
                  align='C', ln=True)
         pdf.cell(190,5,txt='Portaria da obrigatoriedade de raça/cor GM/MS N 344 DE 01/02/1/2017.',align='C',ln=True)
         pdf.cell(190,5,txt='', ln=True)
-        pdf.set_font("Arial", size=14)
+        pdf.set_font("Arial", size=10)
         pdf.cell(190,5, txt='02 - Acolhimento', border=True,ln=True)
         pdf.cell(190,5, txt='TAX:_______ PA:_______ FC:_______ '
                             'FR:_______ Glascow:_______ DX:_______ SAT:_______', border=True)
