@@ -71,7 +71,6 @@ if st.button('Buscar Cadastro'):
         pdf.cell(190,5, txt='Assinatura do paciente', ln=True, align='C')
         pdf.cell(190,5, txt='Raça/Cor: (  ) Branca (  ) Preta (  ) Parda (  ) Amarela (  ) Indigena (  ) Sem informação',
                  align='C', ln=True)
-        pdf.set_font("Arial", size=10)
         pdf.cell(190,5,txt='Portaria da obrigatoriedade de raça/cor GM/MS N 344 DE 01/02/1/2017.',align='C',ln=True)
         pdf.cell(190,5,txt='', ln=True)
         pdf.set_font("Arial", size=14)
