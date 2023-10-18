@@ -41,7 +41,7 @@ if st.button('Buscar Cadastro'):
         pdf.add_page()
         # fontes (times,courier,helvetica,symbol,zpfdingbats
         # 'B' negrito 'U' sublinhado 'I' italico
-        pdf.set_font("Arial", size=15)
+        pdf.set_font("Arial", size=14)
         # Adicione algum conteúdo ao PDF
         pdf.image('logo.jpg',10,8,30)
         pdf.image('sus.png',170,10,30)
@@ -65,13 +65,16 @@ if st.button('Buscar Cadastro'):
                               f"Idade: _______ "
                               f"Sexo: {resultado.head().iat[0, 7]} "
                               f"Tel.: {resultado.head().iat[0, 8]} ", ln=True)
+        pdf.set_font("Arial", size=12)
         pdf.cell(190,8, txt='', ln=True)
-        pdf.cell(190,5, txt='_________________________________________________________________',align='C', ln=True)
+        pdf.cell(190,4, txt='_________________________________________________________________',align='C', ln=True)
         pdf.cell(190,5, txt='Assinatura do paciente', ln=True, align='C')
         pdf.cell(190,5, txt='Raça/Cor: (  ) Branca (  ) Preta (  ) Parda (  ) Amarela (  ) Indigena (  ) Sem informação',
                  align='C', ln=True)
+        pdf.set_font("Arial", size=10)
         pdf.cell(190,5,txt='Portaria da obrigatoriedade de raça/cor GM/MS N 344 DE 01/02/1/2017.',align='C',ln=True)
         pdf.cell(190,5,txt='', ln=True)
+        pdf.set_font("Arial", size=14)
         pdf.cell(190,5, txt='02 - Acolhimento', border=True,ln=True)
         pdf.cell(190,5, txt='TAX:_______ PA:_______ FC:_______ '
                             'FR:_______ Glascow:_______ DX:_______ SAT:_______', border=True)
@@ -117,6 +120,7 @@ if st.button('Buscar Cadastro'):
         pdf.cell(190, 5, txt='',border=True, ln=True)
         pdf.cell(190, 5, txt='',border=True, ln=True)
         pdf.cell(190, 5, txt='',border=True, ln=True)
+        pdf.set_font("Arial", size=11)
         pdf.cell(190, 5, txt=f'Responsável pelo cadastro: {resultado.head().iat[0, 13]}', ln=True)
         pdf.add_page()
         pdf.set_font("Arial", size=15)
