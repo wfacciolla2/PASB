@@ -66,14 +66,14 @@ if st.button('Buscar Cadastro'):
                               f"Sexo: {resultado.head().iat[0, 7]} "
                               f"Tel.: {resultado.head().iat[0, 8]} ", ln=True)
         pdf.set_font("Arial", size=9)
-        pdf.cell(190,6, txt='', ln=True)
+        pdf.cell(190,4, txt='', ln=True)
         pdf.cell(190,4, txt='_________________________________________________________________',align='C', ln=True)
         pdf.cell(190,4, txt='Assinatura do paciente', ln=True, align='C')
         pdf.cell(190,4, txt='Raça/Cor: (  ) Branca (  ) Preta (  ) Parda (  ) Amarela (  ) Indigena (  ) Sem informação',
                  align='C', ln=True)
         pdf.set_font("Arial", size=6)
         pdf.cell(190,4,txt='Portaria da obrigatoriedade de raça/cor GM/MS N 344 DE 01/02/1/2017.',align='C',ln=True)
-        pdf.cell(190,4,txt='', ln=True)
+        pdf.cell(190,2,txt='', ln=True)
         pdf.set_font("Arial", size=9)
         pdf.cell(190,4, txt='02 - Acolhimento', border=True,ln=True)
         pdf.cell(190,5, txt='TAX:_______ PA:_______ FC:_______ '
@@ -81,7 +81,7 @@ if st.button('Buscar Cadastro'):
         pdf.cell(190,5,txt='', ln=True)
         pdf.cell(190,5, txt='Vacinado COVID-19: (  ) Sim (  ) Não (  ) Primeira Dose (  ) Segunda Dose '
                             '(  ) Terceira Dose (  ) Dose única', ln=True)
-        pdf.cell(190,5,txt='',ln=True)
+        pdf.cell(190,3,txt='',ln=True)
         pdf.cell(190, 5, txt='Acolhimento com classificação de risco:',border=True, ln=True)
         pdf.cell(190,5,txt='',ln=True, border=True)
         pdf.cell(190,5,txt='',ln=True, border=True)
