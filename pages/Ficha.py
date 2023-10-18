@@ -53,25 +53,25 @@ if st.button('Buscar Cadastro'):
         pdf.cell(190,5, txt=f'Ala respiratória (    )                                Ala não respiratória (    )',
                  ln=True,border=True, align='C')
         pdf.cell(190,7, txt='01 - DADOS DO PACIENTE/USUÁRIO/Nº DE REGISTRO:',ln=True)
-        pdf.cell(100, 5, txt=f"Nome do usuário: {resultado.head().iat[0, 0]}", ln=True)
-        pdf.cell(81, 5, txt=f"Nome da mãe: {resultado.head().iat[0, 2]}", ln=True)
-        pdf.cell(127, 5, txt=f"Cartão Nacional de saúde: {resultado.head().iat[0, 3]} "
+        pdf.cell(100, 4, txt=f"Nome do usuário: {resultado.head().iat[0, 0]}", ln=True)
+        pdf.cell(81, 4, txt=f"Nome da mãe: {resultado.head().iat[0, 2]}", ln=True)
+        pdf.cell(127, 4, txt=f"Cartão Nacional de saúde: {resultado.head().iat[0, 3]} "
                               f"RG: {resultado.head().iat[0, 5]}  CPF: {resultado.head().iat[0, 4]}", ln=True)
-        pdf.cell(138, 5, txt=f"Endereço: {resultado.head().iat[0, 9]}", ln=True)
-        pdf.cell(98, 5, txt=f"Municipio: {resultado.head().iat[0, 11]} "
+        pdf.cell(138, 4, txt=f"Endereço: {resultado.head().iat[0, 9]}", ln=True)
+        pdf.cell(98, 4, txt=f"Municipio: {resultado.head().iat[0, 11]} "
                               f"Estado: {resultado.head().iat[0, 12]} "
                               f"CEP: {resultado.head().iat[0, 10]}", ln=True)
-        pdf.cell(140, 5, txt=f"Data de nascimento: {resultado.head().iat[0, 6]} "
+        pdf.cell(140, 4, txt=f"Data de nascimento: {resultado.head().iat[0, 6]} "
                               f"Idade: _______ "
                               f"Sexo: {resultado.head().iat[0, 7]} "
                               f"Tel.: {resultado.head().iat[0, 8]} ", ln=True)
         pdf.set_font("Arial", size=9)
-        pdf.cell(190,8, txt='', ln=True)
+        pdf.cell(190,6, txt='', ln=True)
         pdf.cell(190,4, txt='_________________________________________________________________',align='C', ln=True)
-        pdf.cell(190,5, txt='Assinatura do paciente', ln=True, align='C')
-        pdf.cell(190,5, txt='Raça/Cor: (  ) Branca (  ) Preta (  ) Parda (  ) Amarela (  ) Indigena (  ) Sem informação',
+        pdf.cell(190,4, txt='Assinatura do paciente', ln=True, align='C')
+        pdf.cell(190,4, txt='Raça/Cor: (  ) Branca (  ) Preta (  ) Parda (  ) Amarela (  ) Indigena (  ) Sem informação',
                  align='C', ln=True)
-        pdf.cell(190,5,txt='Portaria da obrigatoriedade de raça/cor GM/MS N 344 DE 01/02/1/2017.',align='C',ln=True)
+        pdf.cell(190,4,txt='Portaria da obrigatoriedade de raça/cor GM/MS N 344 DE 01/02/1/2017.',align='C',ln=True)
         pdf.cell(190,5,txt='', ln=True)
         pdf.set_font("Arial", size=9)
         pdf.cell(190,5, txt='02 - Acolhimento', border=True,ln=True)
