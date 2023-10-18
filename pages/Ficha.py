@@ -65,7 +65,7 @@ if st.button('Buscar Cadastro'):
                               f"Idade: _______ "
                               f"Sexo: {resultado.head().iat[0, 7]} "
                               f"Tel.: {resultado.head().iat[0, 8]} ", ln=True)
-        pdf.set_font("Arial", size=12)
+        pdf.set_font("Arial", size=10)
         pdf.cell(190,8, txt='', ln=True)
         pdf.cell(190,4, txt='_________________________________________________________________',align='C', ln=True)
         pdf.cell(190,5, txt='Assinatura do paciente', ln=True, align='C')
